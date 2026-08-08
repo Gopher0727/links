@@ -3,10 +3,11 @@
 
 Zero-dependency (stdlib only). Fetches the page, guesses the title and
 description, lets you confirm / edit them, then appends a new entry.
+The `added` date is generated automatically (today).
 
 Usage:
     python3 tools/add-link.py <url>
-    python3 tools/add-link.py <url> --tags blog,web --summary "one-liner"
+    python3 tools/add-link.py <url> --summary "one-liner"
 
 No args prints this help.
 """
@@ -17,7 +18,6 @@ import sys
 import argparse
 import urllib.request
 import urllib.error
-import urllib.parse
 from pathlib import Path
 from datetime import date
 
@@ -103,7 +103,6 @@ def prompt(label: str, default: str = "") -> str:
 def main() -> int:
     p = argparse.ArgumentParser(description="paste a URL, keep it in data/articles.json")
     p.add_argument("url", nargs="?", help="the article URL to add")
-    p.add_argument("--tags", help="comma-separated tags, skips the prompt")
     p.add_argument("--summary", help="one-line note, skips the prompt")
     p.add_argument("--no-fetch", action="store_true", help="skip fetching; prompt everything")
     args = p.parse_args()
@@ -115,12 +114,6 @@ def main() -> int:
     url = args.url.strip()
     if not re.match(r"^https?://", url):
         url = "https://" + url
-
-    try:
-        host = urllib.parse.urlparse(url).hostname or ""
-    except Exception:
-        host = ""
-    source = host.removeprefix("www.")
 
     # dedupe before fetching
     existing = load()
@@ -152,29 +145,15 @@ def main() -> int:
         summary = args.summary
     else:
         summary = prompt("summary (one line, optional)", summary)
-    if args.tags is None:
-        tags = prompt("tags (comma separated, optional)")
-    else:
-        tags = args.tags
-    tags = [t.strip() for t in re.split(r"[,\s]+", tags) if t.strip()]
 
-    entry = {
-        "title": title,
-        "url": url,
-        "source": source,
-        "summary": summary,
-        "tags": tags,
-        "added": date.today().isoformat(),
-    }
-    if not entry["summary"]:
-        del entry["summary"]
-    if not entry["tags"]:
-        del entry["tags"]
+    entry = {"title": title, "url": url, "added": date.today().isoformat()}
+    if summary:
+        entry["summary"] = summary
 
     existing.append(entry)
     save(existing)
     print(f"\nsaved {len(existing)} entries -> {DATA_FILE}")
-    print(f"  {entry['added']}  {entry['title']}  ({entry['source']})")
+    print(f"  {entry['added']}  {entry['title']}  {url}")
     return 0
 
 

@@ -16,19 +16,17 @@ tools/add-link.py   添加链接工具（零依赖）
 
 ```bash
 python3 tools/add-link.py <url>                 # 自动抓标题/描述，交互式确认
-python3 tools/add-link.py <url> --tags blog,web --summary "一句话点评"
+python3 tools/add-link.py <url> --summary "一句话点评"
 ```
 
 工具会抓取页面标题和描述供确认，按 URL 去重，然后追加写入 `data/articles.json`。
-不想用工具也可以直接手编 JSON，字段见下：
+`added` 日期由工具自动生成，无需手写。不想用工具也可以直接手编 JSON，字段见下：
 
 ```json
 {
   "title": "The Boring Internet",
   "url": "https://example.com/article",
-  "source": "example.com",
   "summary": "一句话点评（可省略）",
-  "tags": ["blog", "web"],
   "added": "2026-08-08"
 }
 ```

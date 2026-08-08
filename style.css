@@ -52,40 +52,7 @@ a:hover { color: var(--accent); text-decoration: underline; text-underline-offse
   font-size: 0.95rem;
 }
 
-/* ---------- tag bar ---------- */
-
-.tagbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1.75rem 0 0.25rem;
-}
-
-.tagbar[hidden] { display: none; } /* flex would override the hidden attribute */
-
-.chip {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--dim);
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.2rem 0.7rem;
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
-}
-
-.chip:hover { color: var(--accent); border-color: var(--accent-dim); }
-
-.chip[aria-pressed="true"] {
-  color: var(--accent);
-  border-color: var(--accent-dim);
-  background: var(--accent-dim);
-}
-
 /* ---------- sections ---------- */
-
-section { margin-top: 2.5rem; }
 
 .section-title {
   font-family: var(--mono);
@@ -148,22 +115,6 @@ section { margin-top: 2.5rem; }
   font-size: 0.88rem;
 }
 
-.link-tags { margin: 0.2rem 0 0 7.1em; }
-
-.link-tags .tag {
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--accent);
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-}
-
-.link-tags .tag:hover { text-decoration: underline; text-underline-offset: 2px; }
-
-.link-tags .tag + .tag { margin-left: 0.6rem; }
-
 /* ---------- states ---------- */
 
 .empty {
@@ -189,7 +140,7 @@ section { margin-top: 2.5rem; }
 .site-footer code { color: var(--accent); }
 
 @media (max-width: 480px) {
-  .link-summary, .link-tags { margin-left: 0; }
+  .link-summary { margin-left: 0; }
   .link-date { min-width: 0; }
   body { padding-top: 2rem; }
 }
