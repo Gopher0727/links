@@ -1,47 +1,32 @@
 # links
 
-个人收藏链接站：只存链接，不写正文。深色极简、纯静态、零构建工具链。
+A curated-link collection site: links only, no writing.
 
-## 结构
-
-```
-index.html          单页站点
-style.css           样式
-script.js           读取 data/articles.json 渲染列表
-data/articles.json  收藏数据（唯一内容源）
-tools/add-link.py   添加链接工具（零依赖）
-```
-
-## 添加链接
+## Adding a link
 
 ```bash
-python3 tools/add-link.py <url>                 # 自动抓标题/描述，交互式确认
-python3 tools/add-link.py <url> --summary "一句话点评"
+python3 tools/add-link.py <url> # fetch title/description, confirm interactively
+python3 tools/add-link.py <url> --group blogs.doing --summary "one-liner"
 ```
 
-工具会抓取页面标题和描述供确认，按 URL 去重，然后追加写入 `data/articles.json`。
-`added` 日期由工具自动生成，无需手写。不想用工具也可以直接手编 JSON，字段见下：
+The tool fetches the page title and description for confirmation, de-dupes
+by URL, and appends to `data/articles.json`. The `added` date is generated
+automatically. `group` decides which page the link appears on:
+
+- `blogs.interesting` / `blogs.doing` — the two blog groups
+- `resources.config` / `resources.fonts` / `resources.tools` / `resources.algorithm` — the four resource groups
+
+Adding a new group means creating a new page by copying an existing one
+and a new entry in the menu on `index.html` (and in `GROUPS` in `tools/add-link.py`).
+
+You can also edit the JSON directly:
 
 ```json
 {
   "title": "The Boring Internet",
   "url": "https://example.com/article",
-  "summary": "一句话点评（可省略）",
+  "group": "blogs.interesting",
+  "summary": "one-liner (optional)",
   "added": "2026-08-08"
 }
 ```
-
-## 本地预览
-
-```bash
-cd links && python3 -m http.server 8000
-# 打开 http://localhost:8000
-```
-
-## 部署
-
-GitHub Pages 直接从 main 分支发布，无需构建：
-
-1. 推送代码到 GitHub 仓库 `Gopher0727/links`
-2. 仓库 Settings → Pages → **Deploy from a branch** → 选 `main` / `/ (root)`
-3. 之后每次 push 自动生效：`https://gopher0727.github.io/links/`

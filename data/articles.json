@@ -2,149 +2,178 @@
   {
     "title": "Using the internet like its 1999",
     "url": "https://joshblais.com/blog/using-the-internet-like-its-1999/#1999",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "blogs.interesting"
   },
   {
     "title": "The Boring Internet",
     "url": "https://www.terrygodier.com/the-boring-internet",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "blogs.interesting"
   },
   {
     "title": "Why write code in 2026",
     "url": "https://softwaredoug.com/blog/2026/07/09/write-code.html",
-    "added": "2026-08-08"
+    "added": "2026-07-13",
+    "group": "blogs.interesting"
   },
   {
     "title": "Punch Yourself in the Face with Reality",
     "url": "https://adi.bio/reality",
-    "added": "2026-08-08"
+    "added": "2026-07-15",
+    "group": "blogs.interesting"
   },
   {
     "title": "The zero-cost fallacy: Open source software in the agentic era",
     "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
-    "added": "2026-08-08"
+    "added": "2026-07-15",
+    "group": "blogs.interesting"
   },
   {
     "title": "The Chinese Voice Actor Forced to Prove He's Human",
     "url": "https://www.sixthtone.com/news/1018753",
-    "added": "2026-08-08"
+    "added": "2026-07-16",
+    "group": "blogs.interesting"
   },
   {
     "title": "programming languages are authoring tools for platforms",
     "url": "https://www.makonea.com/en-US/blog/programming-languages-are-authoring-tools-for-platforms()",
-    "added": "2026-08-08"
+    "added": "2026-08-08",
+    "group": "blogs.interesting"
   },
   {
     "title": "Teach Yourself Programming in Ten Years",
     "url": "https://www.norvig.com/21-days.html",
-    "added": "2026-08-08"
+    "added": "2026-08-08",
+    "group": "blogs.interesting"
   },
   {
     "title": "Learn to become a Go developer",
     "url": "https://roadmap.sh/golang",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "blogs.doing"
   },
   {
     "title": "The Evolution of Caching Libraries in Go",
     "url": "https://maypok86.github.io/otter/blog/cache-evolution/",
-    "added": "2026-08-08"
+    "added": "2026-06-26",
+    "group": "blogs.doing"
   },
   {
     "title": "Analyzing the codebase of Caffeine: a high performance caching library",
     "url": "https://adriacabeza.github.io/2024/07/12/caffeine-cache.html",
-    "added": "2026-08-08"
+    "added": "2026-06-26",
+    "group": "blogs.doing"
   },
   {
     "title": "How I use HTMX with Go",
     "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
-    "added": "2026-08-08"
+    "added": "2026-07-15",
+    "group": "blogs.doing"
   },
   {
     "title": "SQLite should have (Rust-style) editions",
     "url": "https://mort.coffee/home/sqlite-editions/",
-    "added": "2026-08-08"
+    "added": "2026-08-08",
+    "group": "blogs.doing"
   },
   {
     "title": "How to Achieve Pruning When Querying by Non-Partitioned Columns in PostgreSQL",
     "url": "https://hakibenita.com/postgresql-partition-pruning",
-    "added": "2026-08-08"
+    "added": "2026-07-16",
+    "group": "blogs.doing"
   },
   {
     "title": "dotfiles",
     "url": "https://github.com/Gopher0727/dotfiles",
     "summary": "Common software packages and environment configurations on macOS.",
-    "added": "2026-08-08"
+    "added": "2026-06-26",
+    "group": "resources.config"
   },
   {
     "title": "Maple Mono",
     "url": "https://github.com/subframe7536/maple-font",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.fonts"
   },
   {
     "title": "Fira Code",
     "url": "https://github.com/Vtonsky/FiraCode",
-    "added": "2026-08-08"
+    "added": "2026-07-13",
+    "group": "resources.fonts"
   },
   {
     "title": "Jetbrains Mono",
     "url": "https://www.jetbrains.com/lp/mono/",
-    "added": "2026-08-08"
+    "added": "2026-07-13",
+    "group": "resources.fonts"
   },
   {
     "title": "snippets generator",
     "url": "https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.tools"
   },
   {
     "title": "Excalidraw",
     "url": "https://excalidraw.com/",
     "summary": "A virtual collaborative whiteboard tool.",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.tools"
   },
   {
     "title": "TuxMate",
     "url": "https://tuxmate.com/",
     "summary": "Linux Bulk App Installer",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.tools"
   },
   {
     "title": "Luma",
     "url": "https://luma.com/discover",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.tools"
   },
   {
     "title": "Compiler Explorer",
     "url": "https://godbolt.org/",
-    "added": "2026-08-08"
+    "added": "2026-06-26",
+    "group": "resources.tools"
   },
   {
     "title": "Cpp Reference",
     "url": "https://cppreference.com/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   },
   {
     "title": "Graph editor",
     "url": "https://anacc22.github.io/another_graph_editor/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   },
   {
     "title": "OEIS",
     "url": "https://oeis.org/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   },
   {
     "title": "CLIST",
     "url": "https://clist.by/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   },
   {
     "title": "OI Wiki",
     "url": "https://oi-wiki.org/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   },
   {
     "title": "OJHunt",
     "url": "https://ojhunt.com/",
-    "added": "2026-08-08"
+    "added": "2026-06-13",
+    "group": "resources.algorithm"
   }
 ]

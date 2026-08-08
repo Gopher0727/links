@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,41 @@
   <meta name="description" content="A quiet collection of good articles found around the internet.">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <h1 class="site-title">links</h1>
-    <p class="site-tagline">a quiet collection of good articles, found and kept.</p>
+    <p class="site-tagline">A quiet collection of good articles, found and kept.</p>
   </header>
 
   <main>
-    <section id="latest">
-      <h2 class="section-title"><span class="mark">$</span> latest</h2>
-      <ul class="links" id="latest-list"></ul>
-    </section>
+    <h2 class="section-title">groups</h2>
+    <ul class="menu-list">
+      <li><a href="interesting.html"><span class="menu-name"># interesting</span><span class="menu-count"
+            data-group="blogs.interesting"></span></a></li>
+      <li><a href="doing.html"><span class="menu-name"># do something</span><span class="menu-count"
+            data-group="blogs.doing"></span></a></li>
+      <li><a href="config.html"><span class="menu-name"># my configuration</span><span class="menu-count"
+            data-group="resources.config"></span></a></li>
+      <li><a href="fonts.html"><span class="menu-name"># nice fonts</span><span class="menu-count"
+            data-group="resources.fonts"></span></a></li>
+      <li><a href="tools.html"><span class="menu-name"># online tools</span><span class="menu-count"
+            data-group="resources.tools"></span></a></li>
+      <li><a href="algorithm.html"><span class="menu-name"># algorithm tools</span><span class="menu-count"
+            data-group="resources.algorithm"></span></a></li>
+    </ul>
   </main>
 
   <footer class="site-footer">
-    <p><a href="https://github.com/Gopher0727/links" rel="noopener">github.com/Gopher0727/links</a> · entries live in <code>data/articles.json</code></p>
-    <noscript><p class="noscript">this page needs JavaScript to render the list. enable it, or read the raw <a href="data/articles.json">data/articles.json</a>.</p></noscript>
+    <p>© 2026 Gopher · <a href="https://github.com/Gopher0727/links" rel="noopener">github.com/Gopher0727/links</a> ·
+      entries live in <code>data/articles.json</code></p>
+    <noscript>
+      <p class="noscript">this page needs JavaScript to render the list. enable it, or read the raw <a
+          href="data/articles.json">data/articles.json</a>.</p>
+    </noscript>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

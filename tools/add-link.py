@@ -7,10 +7,20 @@ The `added` date is generated automatically (today).
 
 Usage:
     python3 tools/add-link.py <url>
-    python3 tools/add-link.py <url> --summary "one-liner"
+    python3 tools/add-link.py <url> --group blogs.interesting --summary "one-liner"
 
 No args prints this help.
 """
+
+GROUPS = [
+    "blogs.interesting",
+    "blogs.doing",
+    "resources.config",
+    "resources.fonts",
+    "resources.tools",
+    "resources.algorithm",
+]
+DEFAULT_GROUP = "blogs.interesting"
 
 import json
 import re
@@ -50,9 +60,19 @@ def fetch(url: str) -> str:
 
 
 def meta_content(html: str, property_: str) -> str:
-    m = re.search(r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]+content=["\'](.*?)["\']' % re.escape(property_), html, re.I | re.S)
+    m = re.search(
+        r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]+content=["\'](.*?)["\']'
+        % re.escape(property_),
+        html,
+        re.I | re.S,
+    )
     if not m:
-        m = re.search(r'<meta[^>]+content=["\'](.*?)["\'][^>]+(?:property|name)=["\']%s["\']' % re.escape(property_), html, re.I | re.S)
+        m = re.search(
+            r'<meta[^>]+content=["\'](.*?)["\'][^>]+(?:property|name)=["\']%s["\']'
+            % re.escape(property_),
+            html,
+            re.I | re.S,
+        )
     return m.group(1).strip() if m else ""
 
 
@@ -101,10 +121,15 @@ def prompt(label: str, default: str = "") -> str:
 
 
 def main() -> int:
-    p = argparse.ArgumentParser(description="paste a URL, keep it in data/articles.json")
+    p = argparse.ArgumentParser(
+        description="paste a URL, keep it in data/articles.json"
+    )
     p.add_argument("url", nargs="?", help="the article URL to add")
+    p.add_argument("--group", help="section: " + " | ".join(GROUPS))
     p.add_argument("--summary", help="one-line note, skips the prompt")
-    p.add_argument("--no-fetch", action="store_true", help="skip fetching; prompt everything")
+    p.add_argument(
+        "--no-fetch", action="store_true", help="skip fetching; prompt everything"
+    )
     args = p.parse_args()
 
     if not args.url:
@@ -146,14 +171,26 @@ def main() -> int:
     else:
         summary = prompt("summary (one line, optional)", summary)
 
-    entry = {"title": title, "url": url, "added": date.today().isoformat()}
+    if args.group is None:
+        args.group = prompt(f"group ({' | '.join(GROUPS)})", DEFAULT_GROUP)
+    group = args.group.strip()
+    if group not in GROUPS:
+        print(f"unknown group {group!r} — pick one of: {' | '.join(GROUPS)}")
+        return 1
+
+    entry = {
+        "title": title,
+        "url": url,
+        "group": group,
+        "added": date.today().isoformat(),
+    }
     if summary:
         entry["summary"] = summary
 
     existing.append(entry)
     save(existing)
     print(f"\nsaved {len(existing)} entries -> {DATA_FILE}")
-    print(f"  {entry['added']}  {entry['title']}  {url}")
+    print(f"  {entry['added']}  [{group}]  {entry['title']}  {url}")
     return 0
 
 
