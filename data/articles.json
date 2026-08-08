@@ -1,0 +1,266 @@
+[
+  {
+    "title": "Using the internet like its 1999",
+    "url": "https://joshblais.com/blog/using-the-internet-like-its-1999/#1999",
+    "source": "joshblais.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "The Boring Internet",
+    "url": "https://www.terrygodier.com/the-boring-internet",
+    "source": "terrygodier.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Why write code in 2026",
+    "url": "https://softwaredoug.com/blog/2026/07/09/write-code.html",
+    "source": "softwaredoug.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Punch Yourself in the Face with Reality",
+    "url": "https://adi.bio/reality",
+    "source": "adi.bio",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "The zero-cost fallacy: Open source software in the agentic era",
+    "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+    "source": "thoughtworks.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "The Chinese Voice Actor Forced to Prove He's Human",
+    "url": "https://www.sixthtone.com/news/1018753",
+    "source": "sixthtone.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "programming languages are authoring tools for platforms",
+    "url": "https://www.makonea.com/en-US/blog/programming-languages-are-authoring-tools-for-platforms()",
+    "source": "makonea.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Teach Yourself Programming in Ten Years",
+    "url": "https://www.norvig.com/21-days.html",
+    "source": "norvig.com",
+    "tags": [
+      "blog"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Learn to become a Go developer",
+    "url": "https://roadmap.sh/golang",
+    "source": "roadmap.sh",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "The Evolution of Caching Libraries in Go",
+    "url": "https://maypok86.github.io/otter/blog/cache-evolution/",
+    "source": "maypok86.github.io",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Analyzing the codebase of Caffeine: a high performance caching library",
+    "url": "https://adriacabeza.github.io/2024/07/12/caffeine-cache.html",
+    "source": "adriacabeza.github.io",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "How I use HTMX with Go",
+    "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
+    "source": "alexedwards.net",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "SQLite should have (Rust-style) editions",
+    "url": "https://mort.coffee/home/sqlite-editions/",
+    "source": "mort.coffee",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "How to Achieve Pruning When Querying by Non-Partitioned Columns in PostgreSQL",
+    "url": "https://hakibenita.com/postgresql-partition-pruning",
+    "source": "hakibenita.com",
+    "tags": [
+      "dev"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "dotfiles",
+    "url": "https://github.com/Gopher0727/dotfiles",
+    "source": "github.com",
+    "summary": "Common software packages and environment configurations on macOS.",
+    "tags": [
+      "config"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Maple Mono",
+    "url": "https://github.com/subframe7536/maple-font",
+    "source": "github.com",
+    "tags": [
+      "fonts"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Fira Code",
+    "url": "https://github.com/Vtonsky/FiraCode",
+    "source": "github.com",
+    "tags": [
+      "fonts"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Jetbrains Mono",
+    "url": "https://www.jetbrains.com/lp/mono/",
+    "source": "jetbrains.com",
+    "tags": [
+      "fonts"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "snippets generator",
+    "url": "https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode",
+    "source": "snippet-generator.app",
+    "tags": [
+      "tools"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "source": "excalidraw.com",
+    "summary": "A virtual collaborative whiteboard tool.",
+    "tags": [
+      "tools"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "TuxMate",
+    "url": "https://tuxmate.com/",
+    "source": "tuxmate.com",
+    "summary": "Linux Bulk App Installer",
+    "tags": [
+      "tools"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Luma",
+    "url": "https://luma.com/discover",
+    "source": "luma.com",
+    "tags": [
+      "tools"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Compiler Explorer",
+    "url": "https://godbolt.org/",
+    "source": "godbolt.org",
+    "tags": [
+      "tools"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Cpp Reference",
+    "url": "https://cppreference.com/",
+    "source": "cppreference.com",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "Graph editor",
+    "url": "https://anacc22.github.io/another_graph_editor/",
+    "source": "anacc22.github.io",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "OEIS",
+    "url": "https://oeis.org/",
+    "source": "oeis.org",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "CLIST",
+    "url": "https://clist.by/",
+    "source": "clist.by",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "OI Wiki",
+    "url": "https://oi-wiki.org/",
+    "source": "oi-wiki.org",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  },
+  {
+    "title": "OJHunt",
+    "url": "https://ojhunt.com/",
+    "source": "ojhunt.com",
+    "tags": [
+      "algorithm"
+    ],
+    "added": "2026-08-08"
+  }
+]

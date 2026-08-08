@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>links — gopher's curated reads</title>
+  <meta name="description" content="A quiet collection of good articles found around the internet.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">links</h1>
+    <p class="site-tagline">a quiet collection of good articles, found and kept.</p>
+  </header>
+
+  <nav class="tagbar" id="tagbar" hidden>
+    <button class="chip" data-tag="" aria-pressed="true">all</button>
+  </nav>
+
+  <main>
+    <section id="latest">
+      <h2 class="section-title"><span class="mark">$</span> latest</h2>
+      <ul class="links" id="latest-list"></ul>
+    </section>
+
+    <div id="by-tag"><!-- one <section> per tag, rendered by script.js --></div>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="https://github.com/Gopher0727/links" rel="noopener">github.com/Gopher0727/links</a> · entries live in <code>data/articles.json</code></p>
+    <noscript><p class="noscript">this page needs JavaScript to render the list. enable it, or read the raw <a href="data/articles.json">data/articles.json</a>.</p></noscript>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
